@@ -3,21 +3,21 @@ import numpy as np
 import streamlit as st
 
 # Streamlit app
-st.title("Image Transformation App")
-st.header("Upload an Image and Apply Transformations")
+st.title("Image Transformation App made in Python Computer Vision")
+st.header("Upload or choose from system an Image and Apply Transformations ")
 
 # Upload image
 uploaded_file = st.file_uploader("Choose an image", type=["jpg", "jpeg", "png"])
 
 # Transformation options
 st.subheader("Select Transformations")
-translate = st.checkbox("Translate")
-rotate = st.checkbox("Rotate")
-scale = st.checkbox("Scale")
-shear = st.checkbox("Shear")
-flip = st.checkbox("Flip")
-crop = st.checkbox("Crop")
-perspective = st.checkbox("Perspective")
+translate = st.checkbox("Translate the image")
+rotate = st.checkbox("Rotate the image")
+scale = st.checkbox("Scale the image")
+shear = st.checkbox("Shear the image")
+flip = st.checkbox("Flip the image")
+crop = st.checkbox("Crop the image")
+perspective = st.checkbox("Perspective of image")
 
 if uploaded_file is not None:
     # Read the uploaded image
